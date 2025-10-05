@@ -1,0 +1,40 @@
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .burger {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 999;
+  }
+
+  .line {
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 3rem;
+    transition: 0.5s;
+  }
+
+  .burger.active {
+    
+  }
+
+  .burger.active .line1 {
+    position: absolute;
+    transform: rotate(45deg);
+  }
+
+  .burger.active .line3 {
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+
+  .burger.active .line2 {
+    opacity: 0;
+  }
+}
