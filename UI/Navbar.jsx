@@ -9,8 +9,8 @@ export const Navbar = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
 
   useEffect(() => {
-    if (burgerMenu) document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "";
+    if (burgerMenu) document.body.style.overflowY = "hidden";
+    else document.body.style.overflowY = "";
 
     return () => document.body.style.overflow = "";
   }, [burgerMenu]);
@@ -18,15 +18,14 @@ export const Navbar = () => {
   return (
     <header className={`space-around ${cl.navbar}`}>
       <BurgerButton active={burgerMenu} setActive={setBurgerMenu}/>
-      {/* <img onClick={() => setBurgerMenu(!burgerMenu)} src={`${!burgerMenu ? "/burger.png" : "/close.png"}`} className={cl.burger}/>
-      <img src="/logo/logo.webp" className={cl.logo} /> */}
+      <img src="/partfolio-syte/logo/logo.jpg" className={cl.logo} />
       <div className={`center ${cl.links} ${burgerMenu ? cl.show : ""}`}>
         <Link className={cl.link} href={"/"}>Home</Link>
         <Link className={cl.link} href={"/"}>About Us</Link>
         <Link className={cl.link} href={"/"}>Directly</Link>
         <Link className={cl.link} href={"/"}>Info</Link>
       </div>
-      <img src="/logo/logo.webp" className={cl.logo} />
+      <img src="/partfolio-syte/logo/logo.jpg" className={cl.logo} />
     </header>
   );
 };

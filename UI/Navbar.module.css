@@ -1,12 +1,13 @@
 .navbar {
   width: 100%;
-  padding: 0;
+  padding: 10px 0;
   box-shadow: 2px 2px 5px var(--black);
 }
 
 .logo {
-  width: 90px;
-  height: 90px;
+  max-width: 70px;
+  width: 50%;
+  background-color: red;
 }
 
 .links {
@@ -26,7 +27,7 @@
 @media screen and (max-width: 800px) {
   .navbar {
     justify-content: space-between;
-    padding: 0 1.5rem;
+    padding: 0.2rem 1.5rem;
     z-index: 999;
   }
   .burger {
@@ -45,7 +46,7 @@
   .links {
     position: absolute;
     top: 0;
-    left: -400px;
+    left: -100%;
     bottom: 0;
     width: 60%;
     background-color: var(--white);
