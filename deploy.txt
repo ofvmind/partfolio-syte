@@ -1,0 +1,14 @@
+# 1. Очистка старых сборок
+Remove-Item -Recurse -Force .next, out
+
+# 2. Сборка проекта (Next 15 автоматически экспортирует в out)
+npm run build
+
+# 3. Создание .nojekyll, чтобы GitHub Pages не игнорировал _next
+echo $null > out/.nojekyll
+
+# 4. Деплой на GitHub Pages (включая dotfiles)
+npx gh-pages -d out --dotfiles --message "redeploy"
+
+# 5. После деплоя — обновляем сайт Ctrl+F5 или в инкогнито:
+# https://ofvmind.github.io/partfolio-syte/
