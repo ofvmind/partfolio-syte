@@ -6,7 +6,7 @@ export default function Home() {
     <div className={`center-column ${cl.wrapper}`}>
       <SlideElement slideFrom="lett">
         <div
-          style={{ backgroundImage: "url(/partfolio-syte/images/town1.jpg)" }}
+          style={{ backgroundImage: "url(/images/town1.jpg)" }}
           className={`center ${cl.town1}`}
         >
           <p>NEW-YORK</p>
@@ -33,7 +33,7 @@ export default function Home() {
               vibrant city with a mix of historic charm and modern innovation.
             </p>
             <div
-              style={{ backgroundImage: "url(/partfolio-syte/images/boston.jfif)" }}
+              style={{ backgroundImage: "url(/images/boston.jfif)" }}
               className={`center ${cl.town2}`}
             >
               BOSTON
@@ -41,7 +41,7 @@ export default function Home() {
           </div>
           <div className={`center ${cl.townDiv}`}>
             <div
-              style={{ backgroundImage: "url(/partfolio-syte/images/town4.jpg)" }}
+              style={{ backgroundImage: "url(/images/town4.jpg)" }}
               className={`center ${cl.town2}`}
             >
               WASHINGTON
@@ -60,7 +60,7 @@ export default function Home() {
       <div className={cl.line} />
       <SlideElement slideFrom="left">
         <div
-          style={{ backgroundImage: "url(/partfolio-syte/images/town5.jpg)" }}
+          style={{ backgroundImage: "url(/images/town5.jpg)" }}
           className={`center-column ${cl.town1}`}
         >
           <div className={`center ${cl.town1}`}>
@@ -89,7 +89,7 @@ export default function Home() {
               Beverly Hills.
             </p>
             <div
-              style={{ backgroundImage: "url(/partfolio-syte/images/town6.jpg)" }}
+              style={{ backgroundImage: "url(/images/town6.jpg)" }}
               className={`center ${cl.town2}`}
             >
               LOS-ANGELES
@@ -97,7 +97,7 @@ export default function Home() {
           </div>
           <div className={`center ${cl.townDiv}`}>
             <div
-              style={{ backgroundImage: "url(/partfolio-syte/images/town7.jpg)" }}
+              style={{ backgroundImage: "url(/images/town7.jpg)" }}
               className={`center ${cl.town2}`}
             >
               CHICAGO
